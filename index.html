@@ -1,294 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deepak Lodhi | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Deepak Lodhi | Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Deepak Lodhi | Executive Admin | Data Analyst | Python Developer | Portfolio">
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta name="keywords"
+        content="Deepak Lodhi, Portfolio, Data Analyst, Python, Executive Admin, Machine Learning">
+
+    <meta name="author" content="Deepak Lodhi">
+
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+    <!-- ===========================
+         HEADER
+    ============================ -->
 
-<nav>
+    <header>
 
-<h2 class="logo">Deepak Lodhi</h2>
+        <nav>
 
-<ul>
+            <h2 class="logo">Deepak Lodhi</h2>
 
-<li><a href="#home">Home</a></li>
+            <!-- Mobile Menu Button -->
 
-<li><a href="#about">About</a></li>
+            <div class="menu-btn" id="menu-btn">
 
-<li><a href="#skills">Skills</a></li>
+                <i class="fas fa-bars"></i>
 
-<li><a href="#experience">Experience</a></li>
+            </div>
 
-<li><a href="#projects">Projects</a></li>
+            <ul id="nav-links">
 
-<li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
 
-</ul>
+                <li><a href="#about">About</a></li>
 
-</nav>
+                <li><a href="#skills">Skills</a></li>
 
-</header>
+                <li><a href="#experience">Experience</a></li>
 
-<section class="hero" id="home">
+                <li><a href="#projects">Projects</a></li>
 
-<div class="hero-text">
+                <li><a href="#contact">Contact</a></li>
 
-<h3>Hello, I'm</h3>
+            </ul>
 
-<h1>Deepak Lodhi</h1>
+        </nav>
 
-<h2>Executive Admin | Python Developer | Data Analyst</h2>
+    </header>
 
-<p>
+    <!-- ===========================
+         HERO
+    ============================ -->
 
-Passionate about Machine Learning, Data Analytics, Cloud Computing and Healthcare Administration.
+    <section class="hero" id="home">
 
-</p>
+        <div class="hero-text">
 
-<div class="buttons">
+            <h3>Hello, I'm</h3>
 
-<a href="#contact" class="btn">Hire Me</a>
+            <h1>Deepak Lodhi</h1>
 
-<a href="assets/resume.pdf" class="btn btn2" download>Download Resume</a>
+            <h2></h2>
 
-</div>
+            <p>
 
-</div>
+                Passionate Executive Administrator and Data Analyst with expertise
+                in Python, Machine Learning, Cloud Computing, Healthcare
+                Administration and Business Operations.
 
-<div class="hero-image">
+            </p>
 
-<img src="assets/images/profile.jpg" alt="Profile">
+            <div class="buttons">
 
-</div>
+                <a href="#contact" class="btn">
 
-</section>
+                    Hire Me
 
-<section id="about">
+                </a>
 
-<h2>About Me</h2>
+                <a href="assets/resume.pdf"
+                    class="btn btn2"
+                    download>
 
-<p>
+                    Download Resume
 
-I am a dedicated Executive Administrator and aspiring Data Analyst with experience in hospital administration, customer management, machine learning and cloud technologies. I enjoy solving business problems through technology and data-driven solutions.
+                </a>
 
-</p>
+            </div>
 
-</section>
+            <div class="social-icons">
 
-<section id="skills">
+                <a href="mailto:deepaklodhi626023@gmail.com">
 
-<h2>Skills</h2>
+                    <i class="fas fa-envelope"></i>
 
-<div class="skill-box">
+                </a>
 
-<div class="card">
+                <a href="https://github.com/lucifer0854m"
+                    target="_blank">
 
-<h3>Programming</h3>
+                    <i class="fab fa-github"></i>
 
-<p>Python</p>
+                </a>
 
-<p>Java</p>
+                <a href="https://www.linkedin.com/in/deepakl0854m/"
+                    target="_blank">
 
-<p>SQL</p>
+                    <i class="fab fa-linkedin"></i>
 
-</div>
+                </a>
 
-<div class="card">
+            </div>
 
-<h3>Machine Learning</h3>
+        </div>
 
-<p>Pandas</p>
+        <div class="hero-image">
 
-<p>NumPy</p>
+            <img src="assets/images/profile.jpg"
+                alt="Deepak Lodhi"
+                loading="lazy">
 
-<p>Scikit-Learn</p>
+        </div>
 
-</div>
+    </section>
 
-<div class="card">
+    <!-- ===========================
+         ABOUT
+    ============================ -->
 
-<h3>Cloud</h3>
+    <section id="about">
 
-<p>AWS EC2</p>
-
-<p>S3</p>
-
-<p>IAM</p>
-
-<p>VPC</p>
-
-</div>
-
-<div class="card">
-
-<h3>Networking</h3>
-
-<p>TCP/IP</p>
-
-<p>DNS</p>
-
-<p>DHCP</p>
-
-<p>Routing</p>
-
-<p>Switching</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="experience">
-
-<h2>Experience</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<h3>Apex Kidney Care Pvt Ltd</h3>
-
-<h4>Center Manager & Executive Admin</h4>
-
-<span>Feb 2026 - June 2026</span>
-
-<p>
-
-Managing daily operations, executive administration, documentation and coordination.
-
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>Bansal Hospital</h3>
-
-<h4>Executive</h4>
-
-<span>Feb 2024 - Dec 2025</span>
-
-<p>
-
-Handled reporting, quality management, technical support and staff training.
-
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>Magnum Super Distributors</h3>
-
-<h4>Executive</h4>
-
-<span>Nov 2023 - Jan 2024</span>
-
-<p>
-
-Customer support, call handling and complaint resolution.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="project">
-
-<h3>Heart Disease Prediction</h3>
-
-<p>Machine Learning model with 91% Accuracy.</p>
-
-</div>
-
-<div class="project">
-
-<h3>Credit Card Fraud Detection</h3>
-
-<p>Fraud Detection using Logistic Regression.</p>
-
-</div>
-
-<div class="project">
-
-<h3>Face Recognition Attendance System</h3>
-
-<p>Attendance System using OpenCV & Python.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<<section id="contact">
-
-    <h2>Contact Me</h2>
-
-    <div class="contact">
+        <h2>About Me</h2>
 
         <p>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:deepaklodhi626023@gmail.com">
-                deepaklodhi626023@gmail.com
-            </a>
+
+            I am an Executive Administrator and aspiring Data Analyst with
+            experience in hospital administration, operations management,
+            reporting, documentation, customer relationship management,
+            Python programming, Machine Learning and AWS Cloud.
+            I enjoy solving business problems using technology,
+            automation and data-driven decision making.
+
         </p>
+
+    </section>
+
+    <!-- ===========================
+         SKILLS
+    ============================ -->
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="card">
+
+                <h3>Programming</h3>
+
+                <p>Python</p>
+
+                <p>Java</p>
+
+                <p>SQL</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Machine Learning</h3>
+
+                <p>Pandas</p>
+
+                <p>NumPy</p>
+
+                <p>Scikit-Learn</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Cloud</h3>
+
+                <p>AWS EC2</p>
+
+                <p>S3</p>
+
+                <p>IAM</p>
+
+                <p>VPC</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Networking</h3>
+
+                <p>TCP/IP</p>
+
+                <p>DNS</p>
+
+                <p>DHCP</p>
+
+                <p>Routing</p>
+
+                <p>Switching</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         EXPERIENCE
+    ============================ -->
+
+    <section id="experience">
+
+        <h2>Experience</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>Apex Kidney Care Pvt Ltd</h3>
+
+                <h4>Center Manager & Executive Admin</h4>
+
+                <span>February 2026 – Present</span>
+
+                <p>
+
+                    Managing daily center operations, administration,
+                    reporting, documentation, patient coordination,
+                    inventory management and executive support.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Bansal Hospital</h3>
+
+                <h4>Executive (Data & Operations)</h4>
+
+                <span>February 2024 – March 2026</span>
+
+                <p>
+
+                    Managed hospital reporting, data analysis,
+                    operations, quality documentation,
+                    executive support and workflow optimization.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Magnum Super Distributors</h3>
+
+                <h4>Executive</h4>
+
+                <span>November 2023 – January 2024</span>
+
+                <p>
+
+                    Customer relationship management,
+                    complaint handling,
+                    call support and operational assistance.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         PROJECTS
+    ============================ -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>Heart Disease Prediction</h3>
+
+                <p>
+
+                    Machine Learning model for predicting heart disease
+                    with 91% accuracy using Python,
+                    Pandas and Scikit-Learn.
+
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Credit Card Fraud Detection</h3>
+
+                <p>
+
+                    Fraud detection system using Logistic Regression,
+                    data preprocessing and feature engineering.
+
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Face Recognition Attendance System</h3>
+
+                <p>
+
+                    Attendance management using OpenCV,
+                    Python and Face Recognition technology.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         CONTACT
+    ============================ -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+
+            <p>
+
+                <i class="fas fa-envelope"></i>
+
+                <a href="mailto:deepaklodhi626023@gmail.com">
+
+                    deepaklodhi626023@gmail.com
+
+                </a>
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-phone"></i>
+
+                <a href="tel:+916260232301">
+
+                    +91 6260232301
+
+                </a>
+
+            </p>
+
+            <p>
+
+                <i class="fab fa-github"></i>
+
+                <a href="https://github.com/lucifer0854m"
+                    target="_blank">
+
+                    github.com/lucifer0854m
+
+                </a>
+
+            </p>
+
+            <p>
+
+                <i class="fab fa-linkedin"></i>
+
+                <a href="https://www.linkedin.com/in/deepakl0854m/"
+                    target="_blank">
+
+                    linkedin.com/in/deepakl0854m
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         FOOTER
+    ============================ -->
+
+    <footer>
 
         <p>
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+916260232301">
-                +91 6260232301
-            </a>
+
+            © 2026 Deepak Lodhi | All Rights Reserved
+
         </p>
 
-        <p>
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/lucifer0854m" target="_blank">
-                github.com/lucifer0854m
-            </a>
-        </p>
+    </footer>
 
-        <p>
-            <i class="fab fa-linkedin"></i>
-            <a href="https://www.linkedin.com/deepakl0854m/" target="_blank">
-                linkedin.com/in/deepakl0854m
-            </a>
-        </p>
+    <!-- JavaScript -->
 
-    </div>
-
-</section>
-
-<footer>
-
-<p>© 2026 Deepak Lodhi | Portfolio</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
