@@ -1385,3 +1385,359 @@ font-size:28px;
 }
 
 }
+
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* ==========================================
+   TABLETS (992px)
+========================================== */
+
+@media screen and (max-width:992px){
+
+.hero{
+
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:50px;
+
+}
+
+.hero-image{
+
+    order:-1;
+
+}
+
+.hero-image img{
+
+    width:320px;
+    height:320px;
+
+}
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.buttons{
+
+    justify-content:center;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+
+}
+
+.about-container{
+
+    padding:35px;
+
+}
+
+.skills-container,
+.projects-container,
+.certificates{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================================
+   MOBILE (768px)
+========================================== */
+
+@media screen and (max-width:768px){
+
+header{
+
+    padding:0;
+
+}
+
+.navbar{
+
+    padding:18px 20px;
+    flex-wrap:wrap;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+.nav-links{
+
+    display:none;
+    flex-direction:column;
+    width:100%;
+    background:#111827;
+    margin-top:20px;
+    border-radius:12px;
+    padding:20px 0;
+
+}
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+.nav-links li{
+
+    margin:10px 0;
+
+}
+
+.hero{
+
+    padding-top:120px;
+
+}
+
+.hero-text h1{
+
+    font-size:42px;
+
+}
+
+.hero-text h2{
+
+    font-size:22px;
+
+}
+
+.hero-text p{
+
+    font-size:16px;
+
+}
+
+.hero-image img{
+
+    width:260px;
+    height:260px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.btn{
+
+    width:100%;
+    max-width:320px;
+    text-align:center;
+
+}
+
+.section-title{
+
+    font-size:30px;
+
+}
+
+.about-container{
+
+    padding:25px;
+
+}
+
+.skills-container,
+.projects-container,
+.certificates{
+
+    grid-template-columns:1fr;
+
+}
+
+.timeline{
+
+    margin-left:0;
+
+}
+
+.timeline::before{
+
+    left:12px;
+
+}
+
+.timeline-item{
+
+    margin-left:35px;
+    padding:20px;
+
+}
+
+.timeline-item::before{
+
+    left:-28px;
+
+}
+
+.counter-section{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-info,
+.contact-form{
+
+    padding:25px;
+
+}
+
+.footer-content{
+
+    text-align:center;
+
+}
+
+.footer-social{
+
+    justify-content:center;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE (480px)
+========================================== */
+
+@media screen and (max-width:480px){
+
+section{
+
+    padding:60px 18px;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+}
+
+.hero{
+
+    gap:30px;
+
+}
+
+.hero-text h1{
+
+    font-size:34px;
+
+}
+
+.hero-text h2{
+
+    font-size:18px;
+
+}
+
+.hero-text h4{
+
+    font-size:18px;
+
+}
+
+.hero-text p{
+
+    font-size:15px;
+    line-height:1.7;
+
+}
+
+.hero-image img{
+
+    width:220px;
+    height:220px;
+
+}
+
+.btn{
+
+    padding:14px;
+
+    font-size:15px;
+
+}
+
+.card,
+.project-card,
+.contact-info,
+.contact-form{
+
+    padding:20px;
+
+}
+
+.counter-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.counter-box h2{
+
+    font-size:34px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    font-size:15px;
+
+}
+
+.footer-content h2{
+
+    font-size:26px;
+
+}
+
+.footer-content p{
+
+    font-size:14px;
+
+}
+
+.scroll-top{
+
+    width:45px;
+    height:45px;
+    font-size:18px;
+    right:15px;
+    bottom:15px;
+
+}
+
+}
