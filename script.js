@@ -259,6 +259,30 @@ window.addEventListener("load", () => {
 
 });
 
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_f87eai4",
+        "template_vm4lz0k",
+        this
+    ).then(() => {
+
+        alert("Message sent successfully!");
+
+        form.reset();
+
+    }).catch((error) => {
+
+        alert("Failed to send message.");
+
+        console.log(error);
+
+    });
+});
+
 /* ==========================================
    CURRENT YEAR
 ========================================== */
@@ -273,3 +297,4 @@ if (copyright) {
         `© ${year} Deepak Lodhi. All Rights Reserved.`;
 
 }
+
