@@ -1,0 +1,967 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>My Resume Library | Deepak Lodhi</title>
+
+    <meta name="description"
+        content="Deepak Lodhi Resume Library">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Your Existing CSS -->
+    <link rel="stylesheet"
+        href="style.css">
+
+    ```html
+<style>
+
+/* =========================================
+   RESUME LIBRARY
+========================================= */
+
+.resume-library {
+
+    min-height: 100vh;
+
+    padding: 120px 20px 60px;
+
+}
+
+
+.resume-header {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.resume-header h1 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.resume-header p {
+
+    margin-bottom: 25px;
+
+}
+
+
+.resume-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.resume-search {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+}
+
+
+.resume-search input {
+
+    width: 100%;
+
+    padding: 14px 18px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================
+   RESUME CONTAINER
+========================================= */
+
+.resume-container {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   RESUME LIST
+========================================= */
+
+.resume-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+/* =========================================
+   RESUME CARD
+========================================= */
+
+.resume-card {
+
+    width: 100%;
+
+    min-height: 75px;
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================
+   RESUME NAME
+========================================= */
+
+.resume-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+
+    text-align: left;
+
+}
+
+
+.resume-name i {
+
+    font-size: 25px;
+
+    flex-shrink: 0;
+
+}
+
+
+.resume-name span {
+
+    display: block;
+
+    word-break: break-word;
+
+    overflow-wrap: anywhere;
+
+    line-height: 1.5;
+
+    text-align: left;
+
+}
+
+
+/* =========================================
+   BUTTON AREA
+========================================= */
+
+.resume-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* Make buttons same width */
+
+.resume-buttons .btn {
+
+    min-width: 105px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.resume-count {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.resume-loading {
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.resume-error {
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .resume-card {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .resume-name {
+
+        width: 100%;
+
+    }
+
+
+    .resume-buttons {
+
+        width: 100%;
+
+        justify-content: stretch;
+
+    }
+
+
+    .resume-buttons .btn {
+
+        flex: 1;
+
+        min-width: 0;
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .resume-library {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+
+    .resume-card {
+
+        padding: 15px;
+
+    }
+
+
+    .resume-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .resume-buttons .btn {
+
+        width: 100%;
+
+    }
+
+}
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html"
+            class="logo">
+
+            Deepak
+
+        </a>
+
+
+        <div class="menu-toggle">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#skills">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#experience">
+                    Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#projects">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#certifications">
+                    Certificates
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================
+     RESUME LIBRARY
+========================================= -->
+
+<section class="resume-library">
+
+
+    <div class="resume-header">
+
+        <h1>
+
+            <i class="fa-solid fa-folder-open"></i>
+
+            Resume Library
+
+        </h1>
+
+
+        <p>
+
+            Browse and download my resumes
+
+        </p>
+
+
+        <div class="resume-actions">
+
+            <a href="index.html"
+                class="btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Portfolio
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         SEARCH
+    ====================================== -->
+
+    <div class="resume-search">
+
+        <input
+            type="text"
+            id="resumeSearch"
+            placeholder="Search resumes...">
+
+    </div>
+
+
+    <!-- =====================================
+         COUNT
+    ====================================== -->
+
+    <div class="resume-count">
+
+        <strong>
+
+            <span id="resumeCount">
+                Loading...
+            </span>
+
+        </strong>
+
+    </div>
+
+
+    <!-- =====================================
+         RESUME LIST
+    ====================================== -->
+
+    <div class="resume-container">
+
+        <div
+            id="resumeList"
+            class="resume-list">
+
+            <div class="resume-loading">
+
+                <i class="fas fa-spinner fa-spin"></i>
+
+                Loading resumes...
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script>
+
+    /*
+    ==========================================================
+    GITHUB SETTINGS
+    ==========================================================
+
+    Your repository:
+    github.com/lucifer0854m/Portfolio
+
+    Resume folder:
+    assets/resume/
+
+    ==========================================================
+    */
+
+    const GITHUB_USERNAME = "lucifer0854m";
+
+    const GITHUB_REPOSITORY = "Portfolio";
+
+    const RESUME_FOLDER = "assets/resume";
+
+
+    /*
+    ==========================================================
+    GITHUB API URL
+    ==========================================================
+    */
+
+    const API_URL =
+        `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/contents/${RESUME_FOLDER}`;
+
+
+    /*
+    ==========================================================
+    ELEMENTS
+    ==========================================================
+    */
+
+    const resumeList =
+        document.getElementById("resumeList");
+
+    const resumeSearch =
+        document.getElementById("resumeSearch");
+
+    const resumeCount =
+        document.getElementById("resumeCount");
+
+
+    /*
+    ==========================================================
+    STORE RESUMES
+    ==========================================================
+    */
+
+    let allResumes = [];
+
+
+    /*
+    ==========================================================
+    LOAD RESUMES
+    ==========================================================
+    */
+
+    async function loadResumes() {
+
+        try {
+
+            const response =
+                await fetch(API_URL);
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Unable to access GitHub repository."
+                );
+
+            }
+
+
+            const files =
+                await response.json();
+
+
+            /*
+            Only show files, not folders
+            */
+
+            allResumes =
+                files.filter(file => {
+
+                    return file.type === "file";
+
+                });
+
+
+            /*
+            Sort alphabetically
+            */
+
+            allResumes.sort((a, b) => {
+
+                return a.name.localeCompare(
+                    b.name
+                );
+
+            });
+
+
+            displayResumes(allResumes);
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+
+            resumeList.innerHTML = `
+
+                <div class="resume-error">
+
+                    <i class="fas fa-circle-exclamation"></i>
+
+                    <h3>
+                        Unable to load resumes
+                    </h3>
+
+                    <p>
+                        Please check your GitHub repository
+                        and the assets/resume folder.
+                    </p>
+
+                </div>
+
+            `;
+
+
+            resumeCount.textContent =
+                "Unable to load";
+
+        }
+
+    }
+
+
+    /*
+    ==========================================================
+    DISPLAY RESUMES
+    ==========================================================
+    */
+
+    function displayResumes(resumes) {
+
+
+        resumeCount.textContent =
+            `${resumes.length} Resume${resumes.length !== 1 ? "s" : ""}`;
+
+
+        if (resumes.length === 0) {
+
+            resumeList.innerHTML = `
+
+                <div class="resume-error">
+
+                    <i class="fas fa-folder-open"></i>
+
+                    <h3>
+                        No resumes found
+                    </h3>
+
+                    <p>
+                        Upload resumes to:
+                        assets/resume/
+                    </p>
+
+                </div>
+
+            `;
+
+            return;
+
+        }
+
+
+        resumeList.innerHTML = "";
+
+
+        resumes.forEach(file => {
+
+
+            /*
+            GitHub download URL
+            */
+
+            const fileURL =
+                `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/raw/refs/heads/main/${RESUME_FOLDER}/${encodeURIComponent(file.name)}`;
+
+
+            /*
+            Card
+            */
+
+            const card =
+                document.createElement("div");
+
+            card.className =
+                "resume-card";
+
+
+            /*
+            File name area
+            */
+
+            const name =
+                document.createElement("div");
+
+            name.className =
+                "resume-name";
+
+
+            name.innerHTML = `
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                <span>
+                    ${escapeHTML(file.name)}
+                </span>
+
+            `;
+
+
+            /*
+            Buttons
+            */
+
+            const buttons =
+                document.createElement("div");
+
+            buttons.className =
+                "resume-buttons";
+
+
+            /*
+            View button
+            */
+
+            const viewButton =
+                document.createElement("a");
+
+            viewButton.href =
+                fileURL;
+
+            viewButton.target =
+                "_blank";
+
+            viewButton.className =
+                "btn";
+
+            viewButton.innerHTML = `
+
+                <i class="fa-solid fa-eye"></i>
+
+                View
+
+            `;
+
+
+            /*
+            Download button
+            */
+
+            const downloadButton =
+                document.createElement("a");
+
+            downloadButton.href =
+                fileURL;
+
+            downloadButton.download =
+                file.name;
+
+            downloadButton.className =
+                "btn btn2";
+
+            downloadButton.innerHTML = `
+
+                <i class="fa-solid fa-download"></i>
+
+                Download
+
+            `;
+
+
+            /*
+            Add buttons
+            */
+
+            buttons.appendChild(
+                viewButton
+            );
+
+            buttons.appendChild(
+                downloadButton
+            );
+
+
+            /*
+            Add everything
+            */
+
+            card.appendChild(
+                name
+            );
+
+            card.appendChild(
+                buttons
+            );
+
+
+            resumeList.appendChild(
+                card
+            );
+
+        });
+
+    }
+
+
+    /*
+    ==========================================================
+    SEARCH
+    ==========================================================
+    */
+
+    resumeSearch.addEventListener(
+        "input",
+        function () {
+
+            const searchText =
+                this.value.toLowerCase().trim();
+
+
+            const filtered =
+                allResumes.filter(file => {
+
+                    return file.name
+                        .toLowerCase()
+                        .includes(searchText);
+
+                });
+
+
+            displayResumes(
+                filtered
+            );
+
+        }
+    );
+
+
+    /*
+    ==========================================================
+    HTML ESCAPE
+    ==========================================================
+    */
+
+    function escapeHTML(text) {
+
+        const div =
+            document.createElement("div");
+
+        div.textContent =
+            text;
+
+        return div.innerHTML;
+
+    }
+
+
+    /*
+    ==========================================================
+    START
+    ==========================================================
+    */
+
+    loadResumes();
+
+</script>
+
+
+<!-- =========================================
+     EXISTING SCRIPT
+========================================= -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+
